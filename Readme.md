@@ -1,4 +1,4 @@
-vercel link: "https://prisma-sql-assingment-04.vercel.app/"
+vercel link: " https://ecommerce2024bootcamp-ahfahim009s-projects.vercel.app/"
 
 # full-stack-assignment-04 : E_Commerce
 
