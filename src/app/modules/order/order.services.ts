@@ -9,6 +9,9 @@ const createOrder = async (payload: IOrder) => {
   if (!isProductExit)
     throw new AppError(404, "sorry! this product doesn't exit");
 
+  // product price !
+  payload.price = isProductExit.price;
+
   // Step 1: Decrement the inventory quantity
   const updatedProduct = await ProductModel.findOneAndUpdate(
     {

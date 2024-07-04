@@ -4,6 +4,9 @@ import { IProduct } from "./product.interface";
 import ProductModel from "./product.model";
 
 const createProduct = async (payload: IProduct) => {
+  // is same product name exit
+  const productName = await ProductModel.findOne({ name: payload.name })
+  if (productName) throw new AppError(404, "sorry, This product name already has in store! Try another unique product name please!")
   const result = await ProductModel.create(payload);
   return result;
 };
