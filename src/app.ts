@@ -19,7 +19,7 @@ app.get("/", (req: Request, res: Response) => {
   res.json({
     status: 200,
     success: true,
-    message: "E Commerce server...",
+    message: "E Commerce server . Assignment 2 for boot camp",
   });
 });
 
