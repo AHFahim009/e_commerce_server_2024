@@ -30,5 +30,3 @@ app.use(apiNotFound)
 
 export default app;
 
-// remove 1
-// remove 2
